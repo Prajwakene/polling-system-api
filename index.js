@@ -24,5 +24,5 @@ app.listen(PORT || 5000, (err) => {
   if (err) {
     console.log(`Error in running the server : ${err}`);
   }
-  console.log(`Server is up and running at ${PORT}`);
+  console.log(`Server is up and running on port: ${PORT}`);
 });
