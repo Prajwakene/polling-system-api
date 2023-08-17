@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectWithDb = () => {
   mongoose
-    .connect(process.env.DB_URL, {
+    .connect(process.env.DB_URL || "mongodb://127.0.0.1:27017/polling-system-api", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     })
